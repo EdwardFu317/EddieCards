@@ -1,0 +1,30 @@
+{
+  "name": "ob-ki",
+  "version": "0.1.0",
+  "description": "An Anki-inspired flashcard deck and review plugin for Obsidian.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs --watch",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production"
+  },
+  "keywords": [
+    "obsidian",
+    "anki",
+    "flashcards",
+    "spaced-repetition"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.20.2",
+    "obsidian": "^1.5.12",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "anki-apkg-export": "^4.0.3",
+    "ts-fsrs": "^5.3.2"
+  }
+}
